@@ -11,6 +11,11 @@
 		DF54E8522C1D8386004CE445 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E8512C1D8386004CE445 /* ContentView.swift */; };
 		DF54E8542C1D8387004CE445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF54E8532C1D8387004CE445 /* Assets.xcassets */; };
 		DF54E8572C1D8387004CE445 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF54E8562C1D8387004CE445 /* Preview Assets.xcassets */; };
+		DF54E85E2C1D8425004CE445 /* UserFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E85D2C1D8425004CE445 /* UserFormTextField.swift */; };
+		DF54E8622C1D84CF004CE445 /* RequirementsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E8612C1D84CF004CE445 /* RequirementsPickerView.swift */; };
+		DF54E8642C1D85F3004CE445 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E8632C1D85F3004CE445 /* AuthenticationViewModel.swift */; };
+		DF54E8662C1D8771004CE445 /* KeyboardIgnoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E8652C1D8771004CE445 /* KeyboardIgnoring.swift */; };
+		DF54E86A2C1D87F6004CE445 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54E8692C1D87F6004CE445 /* CheckboxToggleStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		DF54E8512C1D8386004CE445 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF54E8532C1D8387004CE445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF54E8562C1D8387004CE445 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF54E85D2C1D8425004CE445 /* UserFormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormTextField.swift; sourceTree = "<group>"; };
+		DF54E8612C1D84CF004CE445 /* RequirementsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsPickerView.swift; sourceTree = "<group>"; };
+		DF54E8632C1D85F3004CE445 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		DF54E8652C1D8771004CE445 /* KeyboardIgnoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardIgnoring.swift; sourceTree = "<group>"; };
+		DF54E8692C1D87F6004CE445 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		DF54E86F2C1D8A8A004CE445 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				DF54E84E2C1D8386004CE445 /* APasswordValidationScreenInSwiftUI */,
+				DF54E86F2C1D8A8A004CE445 /* README.md */,
 				DF54E84D2C1D8386004CE445 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,10 +63,13 @@
 		DF54E84E2C1D8386004CE445 /* APasswordValidationScreenInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				DF54E84F2C1D8386004CE445 /* APasswordValidationScreenInSwiftUIApp.swift */,
+				DF54E85F2C1D842F004CE445 /* App */,
+				DF54E86B2C1D88E1004CE445 /* Components */,
 				DF54E8512C1D8386004CE445 /* ContentView.swift */,
-				DF54E8532C1D8387004CE445 /* Assets.xcassets */,
+				DF54E86E2C1D89EA004CE445 /* CustomDefinition */,
+				DF54E86D2C1D8910004CE445 /* Extensions */,
 				DF54E8552C1D8387004CE445 /* Preview Content */,
+				DF54E86C2C1D88FF004CE445 /* ViewModel */,
 			);
 			path = APasswordValidationScreenInSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +80,48 @@
 				DF54E8562C1D8387004CE445 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF54E85F2C1D842F004CE445 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DF54E84F2C1D8386004CE445 /* APasswordValidationScreenInSwiftUIApp.swift */,
+				DF54E8532C1D8387004CE445 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DF54E86B2C1D88E1004CE445 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF54E8612C1D84CF004CE445 /* RequirementsPickerView.swift */,
+				DF54E85D2C1D8425004CE445 /* UserFormTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DF54E86C2C1D88FF004CE445 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF54E8632C1D85F3004CE445 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF54E86D2C1D8910004CE445 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF54E8652C1D8771004CE445 /* KeyboardIgnoring.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF54E86E2C1D89EA004CE445 /* CustomDefinition */ = {
+			isa = PBXGroup;
+			children = (
+				DF54E8692C1D87F6004CE445 /* CheckboxToggleStyle.swift */,
+			);
+			path = CustomDefinition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF54E8622C1D84CF004CE445 /* RequirementsPickerView.swift in Sources */,
+				DF54E8642C1D85F3004CE445 /* AuthenticationViewModel.swift in Sources */,
 				DF54E8522C1D8386004CE445 /* ContentView.swift in Sources */,
+				DF54E85E2C1D8425004CE445 /* UserFormTextField.swift in Sources */,
 				DF54E8502C1D8386004CE445 /* APasswordValidationScreenInSwiftUIApp.swift in Sources */,
+				DF54E8662C1D8771004CE445 /* KeyboardIgnoring.swift in Sources */,
+				DF54E86A2C1D87F6004CE445 /* CheckboxToggleStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
