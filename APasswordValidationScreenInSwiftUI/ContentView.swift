@@ -44,12 +44,12 @@ struct ContentView: View {
             } label: {
                 Text("Sign Up")
                     .font(.system(size: 19.5, weight: .medium))
-                
             }
             .frame(width: 300, height: 50)
             .foregroundStyle(.white)
-            .background(.black)
+            .background(authVM.areAllFieldsValid ? .green : .red)
             .clipShape(RoundedRectangle(cornerRadius: 6))
+            .disabled(authVM.areAllFieldsValid)
         }
     }
 }

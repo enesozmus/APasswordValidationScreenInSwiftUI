@@ -21,6 +21,8 @@ final class AuthenticationViewModel: ObservableObject {
     @Published var confirmationMatch = false
     @Published var areAllFieldsValid = false
     
+    private var cancellable = Set<AnyCancellable>()
+    
     init() {
         validateSignUpFields()
     }
@@ -66,5 +68,14 @@ final class AuthenticationViewModel: ObservableObject {
                 return self.hasEightChar && self.hasSpacialChar && self.hasOneDigit && self.hasOneUpperCaseChar && self.confirmationMatch
             }
             .assign(to: &$areAllFieldsValid)
+        /// reset confirmPassword
+        $password
+            .map { password in
+                if password.isEmpty {
+                    self.confirmPassword = ""
+                }
+            }
+            .sink { }
+            .store(in: &cancellable)
     }
 }
